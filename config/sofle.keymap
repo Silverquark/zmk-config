@@ -52,14 +52,14 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  |  ^   | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-// |     | <-   |  v   |    -> |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+// |     |      |      |   ^   |       |      |                | PGUP |      |   ^   |      |       |       |
+// |     |      | <-   |   v   |    -> |      |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
+// |     |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp INS      &kp UP       &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
-&trans     &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
+&trans     &trans       &trans       &kp UP       &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
+&trans     &trans       &kp LEFT     &kp DOWN     &RIGHT       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &trans       &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
